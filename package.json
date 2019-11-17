@@ -1,0 +1,30 @@
+{
+  "name": "devcamper_api",
+  "version": "1.0.0",
+  "description": "devcamper backend api",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farrdy/DEVCAMPER_API.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Farai Motsi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/farrdy/DEVCAMPER_API/issues"
+  },
+  "homepage": "https://github.com/farrdy/DEVCAMPER_API#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
