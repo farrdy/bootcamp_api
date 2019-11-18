@@ -1,7 +1,7 @@
 
 const express = require('express');
 //route files
-const bootcamps = require('./routes/bootcamps');
+const bootcamps = require('/routes/bootcamps');
 
 const dotenv = require('dotenv');
 
