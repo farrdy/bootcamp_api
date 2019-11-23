@@ -8,7 +8,7 @@ const Bootcamp = require('../models/bootcamp');
 exports.getBootcamps = async (req, res, next) => {
     try {
         const bootcamps = await Bootcamp.find();
-        res.status(200).json({ success: true, count: bootcamps.length, data: bootcamps });
+        res.status(200).json({ success: true, data: bootcamps });
     } catch (err) {
         res.status(400).json({ success: false });
     }
@@ -73,7 +73,7 @@ exports.updateBootcamp = async (req, res, next) => {
 // @access Private
 
 
-exports.deleteBootcamp = async (req, res, next) => {
+exports.deleteBootcamp = (req, res, next) => {
     const bootcamp = await Bootcamp.findByIdAndDelete(req.params.id, req.body, {
         new: true,
         runValidators: True

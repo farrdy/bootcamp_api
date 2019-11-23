@@ -4,7 +4,7 @@ const connectDB = async () => {
         useNewUrlParser: true,
         useCreateIndex: true,
         useFindAndModify: false,
-        useUnifiedTopology: true,
+        useUnifiedTopology: false,
         reconnectTries: 30,
         reconnectInterval: 500,// in ms  
         reconnectTries: 30

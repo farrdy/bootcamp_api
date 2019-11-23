@@ -9,15 +9,6 @@ const connectDB = async () => {
         reconnectInterval: 500,// in ms  
         reconnectTries: 30
 
-
-        // https://mongoosejs.com/docs/deprecations.html
-
-
-
-
-
-
-
     });
 
     console.log(`MongoDB connected:${conn.connection.host}`.cyan.underline.bold);
