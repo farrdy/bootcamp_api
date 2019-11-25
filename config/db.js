@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const connectDB = async () => {
+    console.log(process.env.MONGO_URI);
     const conn = await mongoose.connect(process.env.MONGO_URI, {
         useNewUrlParser: true,
         useCreateIndex: true,
@@ -8,16 +9,6 @@ const connectDB = async () => {
         reconnectTries: 30,
         reconnectInterval: 500,// in ms  
         reconnectTries: 30
-
-
-        // https://mongoosejs.com/docs/deprecations.html
-
-
-
-
-
-
-
     });
 
     console.log(`MongoDB connected:${conn.connection.host}`.cyan.underline.bold);
