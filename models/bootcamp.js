@@ -108,6 +108,7 @@ BootcampSchema.pre('save', function (next) {
 
 // //Geocode & create location field 
 // BootcampSchema.pre('save', async function (next) {
+
 //     const loc = await geocoder.geocode(this.address);
 //     this.location = {
 //         type: 'Point',
@@ -119,7 +120,7 @@ BootcampSchema.pre('save', function (next) {
 //         zipcode: loc[0].zipCode,
 //         country: loc[0].countryCode
 //     }
-//     //do not save address in db\
+//     //     //do not save address in db\
 //     this.address = undefined
 //     next();
 // })
